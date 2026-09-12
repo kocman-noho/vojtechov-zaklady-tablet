@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#efeae2" />
+    <meta name="description" content="Interaktivní 3D model základu a větrné elektrárny ENERCON E-175 ve Vojtěchově." />
+    <title>NOHO · Základ větrné elektrárny · Vojtěchov</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23003366'/%3E%3Cpath d='M20 30V17m0 0V5m0 12L9 23m11-6 11 6' stroke='%23cedc00' stroke-width='3'/%3E%3C/svg%3E" />
+    <link rel="preload" href="/fonts/StyreneA-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/StyreneA-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="https://noho.cz" aria-label="NOHO"><svg viewBox="0 0 425 95" aria-hidden="true"><path d="M91.7285 94.5221H73.4108L22.0292 29.3523V94.2627H0V0H25.6209L70.2381 57.7469V0H91.7285V94.5221Z"/><path transform="translate(107.73 0)" d="M0 47.261C0 19.1986 21.1146 0 48.5384 0C75.9622 0 96.9606 19.1792 96.9606 47.261C96.9606 75.3428 75.846 94.5221 48.5384 94.5221C21.2307 94.5221 0 75.2074 0 47.261ZM74.6848 47.261C74.6848 31.9331 64.6404 19.5857 48.5384 19.5857C32.4363 19.5857 22.2758 31.817 22.2758 47.261C22.2758 62.7051 32.4557 74.9364 48.5384 74.9364C64.6211 74.9364 74.6848 62.7051 74.6848 47.261Z"/><path transform="translate(220.69 0)" d="M68.8452 57.1175H22.6349V94.5221H0V0H22.6349V37.1444H68.8452V0H91.34V94.5221H68.8452V57.1175Z"/><path transform="translate(328.03 0)" d="M0 47.261C0 19.1986 21.1146 0 48.5384 0C75.9622 0 96.9606 19.1792 96.9606 47.261C96.9606 75.3428 75.846 94.5221 48.5384 94.5221C21.2307 94.5221 0 75.2074 0 47.261ZM74.6848 47.261C74.6848 31.9331 64.6404 19.5857 48.5384 19.5857C32.4363 19.5857 22.2758 31.817 22.2758 47.261C22.2758 62.7051 32.4557 74.9364 48.5384 74.9364C64.6211 74.9364 74.6848 62.7051 74.6848 47.261Z"/></svg></a>
+      <div class="header-project">Vojtěchov <span>ENERCON E-175 EP5</span></div>
+      <div class="view-tools" role="group" aria-label="Ovládání pohledu">
+        <button id="reset" aria-label="Výchozí pohled" title="Výchozí pohled">↺</button>
+        <button id="top" aria-label="Pohled shora" title="Pohled shora">⊞</button>
+        <button id="zoom-in" aria-label="Přiblížit" title="Přiblížit">+</button>
+        <button id="zoom-out" aria-label="Oddálit" title="Oddálit">−</button>
+        <button id="spin" aria-label="Automatické otáčení" title="Automatické otáčení" aria-pressed="false">⟳</button>
+      </div>
+      <button id="about-button" class="text-button" aria-label="O modelu a ovládání" title="O modelu a ovládání">ⓘ<span>O modelu</span></button>
+    </header>
+    <main>
+      <div id="viewport" role="region" aria-label="Interaktivní 3D model větrné elektrárny">
+        <div id="loading" role="status"><div class="loading-mark"></div><strong>Načítání modelu</strong><span id="load-status">Připravujeme základ a větrnou elektrárnu…</span></div>
+        <div id="labels" aria-hidden="true"></div>
+      </div>
+    </main>
+    <section class="explore-dock" aria-label="Ovládání modelu">
+      <nav class="chapters" aria-label="Zobrazení">
+        <button data-scene="foundation" class="active" aria-pressed="true">Základ</button>
+        <button data-scene="deconstruct" aria-pressed="false">Rozložení</button>
+        <button data-scene="scale" aria-pressed="false">Celá elektrárna</button>
+      </nav>
+      <div class="dock-content">
+        <div class="compare-panel" role="group" aria-label="Objekty pro porovnání velikosti">
+        <div class="comparison-options">
+          <button data-object="man" aria-pressed="true"><svg viewBox="0 0 28 28"><circle cx="14" cy="5" r="2.3"/><path d="M14 9v9m-5-5 5-4 5 4m-5 5-4 8m4-8 4 8"/></svg><span>Muž</span><i>✓</i></button>
+          <button data-object="woman" aria-pressed="true"><svg viewBox="0 0 28 28"><circle cx="14" cy="5" r="2.3"/><path d="m10 10 4-1 4 1 3 8H7zm1 8-1 8m6-8 1 8M10 10l-4 7m12-7 4 7"/></svg><span>Žena</span><i>✓</i></button>
+          <button data-object="car" aria-pressed="true"><svg viewBox="0 0 28 28"><path d="m3 16 3-7h15l4 7v6H3zm2 0h18M8 9l-1 7m12-7 2 7"/><circle cx="7" cy="23" r="2"/><circle cx="21" cy="23" r="2"/></svg><span>Kodiaq</span><i>✓</i></button>
+          <button data-object="house" aria-pressed="false"><svg viewBox="0 0 28 28"><path d="m2 12 12-9 12 9M5 10v15h18V10M11 25v-9h6v9"/></svg><span>Dům</span><i>+</i></button>
+        </div>
+          <p id="comparison-status" role="status" aria-live="polite"></p>
+        </div>
+        <div class="layer-controls" role="group" aria-label="Viditelné vrstvy">
+          <button data-layer="concrete" aria-pressed="true"><i style="--swatch:#bcbcaf"></i>Beton</button>
+          <button data-layer="steel" aria-pressed="true"><i style="--swatch:#647975"></i>Výztuž</button>
+          <button data-layer="anchors" aria-pressed="true"><i style="--swatch:#aa7645"></i>Kotvy</button>
+          <button data-layer="ducts" aria-pressed="true"><i style="--swatch:#d57c3c"></i>Chráničky</button>
+        </div>
+        <div class="explosion-control">
+          <label for="explode">Rozložení</label>
+          <input id="explode" type="range" min="0" max="100" step="1" value="0"/>
+          <output id="explode-value" for="explode">0 %</output>
+          <button id="play">Přehrát <span>▶</span></button>
+        </div>
+      </div>
+    </section>
+    <dialog id="about" aria-labelledby="about-title">
+      <button id="close-about" aria-label="Zavřít">×</button>
+      <h1 id="about-title">O modelu</h1>
+      <p>Vojtěchov · ENERCON E-175 EP5 · výška náboje 132 m</p>
+      <h2>Ovládání</h2>
+      <p>Jedním prstem model otáčíte, dvěma posouváte a roztažením prstů přibližujete. Myší táhněte pro otáčení, pravým tlačítkem pro posun a kolečkem pro přiblížení. Při zaměření modelu klávesou Tab můžete použít šipky, +/− a R pro výchozí pohled.</p>
+      <dl>
+        <dt>Základ</dt><dd>Průměr 26,6 m, sokl 8,8 m a maximální hloubka betonu 3,2 m podle výkresu D02888980. Výkres uvádí 759 m³ betonu; rekonstruovaná geometrie má 758,119 m³. Textura betonu je ilustrační.</dd>
+        <dt>Terén a řez</dt><dd>Terén leží 0,15 m pod horní hranou soklu. Na této úrovni stojí také srovnávací objekty. Ilustrační řez odkrývá základ a kabelové chráničky; nejde o návrh výkopu ani zaměřený profil terénu.</dd>
+        <dt>Výztuž a kotvení</dt><dd>Referenční geometrie v reálném měřítku. Vnitřní výztuž je kvůli výkonu zobrazena v odkrytém kvadrantu. Kotvení tvoří 240 dříků M36. Rozmístění výztuže a vedení chrániček částečně vychází z odhadů. Rozložení vrstev slouží k vysvětlení konstrukce, nikoli jako montážní postup nebo výrobní dokumentace.</dd>
+        <dt>Větrná elektrárna</dt><dd>Dodaný model byl přizpůsoben průměru rotoru 175 m, výšce náboje 132 m a napojení na základ o průměru 6,7 m. Samostatné hranaté prvky na špičkách lopatek byly odstraněny; původní zúžené konce lopatek zůstaly zachovány. Jde o vizuální přizpůsobení, nikoli přesnou rekonstrukci věže od výrobce. <a href="https://www.enercon.de/en/turbines/e-175-ep5" target="_blank" rel="noreferrer">Parametry ENERCON ↗</a></dd>
+        <dt>Srovnávací objekty</dt><dd>Škoda Kodiaq 2016 má délku 4,697 m; postavy přibližně 1,88 m a 1,75 m. Dům má ilustrační výšku 9,08 m a rozměry 13,70 × 13,66 m včetně střechy a schodů. Jednotky zdrojového modelu byly podle proporcí vyhodnoceny jako palce. Soubor 3DS obsahoval materiály bez obrazových textur; povrchy byly doplněny texturami dřeva a kamene. <a href="https://www.skoda-storyboard.com/en/press-kits/skoda-kodiaq-paris-press-kit-2016/" target="_blank" rel="noreferrer">Rozměry vozu Škoda ↗</a></dd>
+      </dl>
+      <p class="notes-links"><a href="models/provenance.json" target="_blank">Zpracování modelů ↗</a><a href="models/comparisons/provenance.json" target="_blank">Srovnávací objekty ↗</a><a href="models/accuracy.json" target="_blank">Přesnost modelu ↗</a></p>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

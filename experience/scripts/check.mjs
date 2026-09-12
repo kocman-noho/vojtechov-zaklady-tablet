@@ -1,0 +1,62 @@
+import { chromium } from 'playwright';
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome', headless: true, args: ['--no-sandbox', '--enable-webgl', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+// Detailed CAD can take longer to rasterize in software WebGL on a busy host.
+page.setDefaultTimeout(120000);
+const errors = [];
+page.on('pageerror', e => errors.push(e.message));
+page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+page.on('response', r => { if (r.status() >= 400) errors.push(`${r.status()} ${r.url()}`); });
+try {
+ await page.goto(process.env.PREVIEW_URL || 'http://127.0.0.1:5173');
+ await page.waitForFunction(() => window.foundationExperience?.state().loaded, null, { timeout: 120000 });
+ await page.waitForTimeout(1800);
+ fs.mkdirSync('artifacts', { recursive: true });
+ await page.screenshot({ path: 'artifacts/foundation-desktop.png' }); console.log('Loaded models; checking dimensions.');
+ let state = await page.evaluate(() => window.foundationExperience.state());
+ assert.equal(state.meshCount, 11); assert.equal(state.turbineLoaded, true); assert.equal(state.mode, 'foundation');
+ assert.equal(state.concreteTexture, 'ready', 'Concrete surface texture loaded');
+ const bounds = await page.evaluate(() => window.foundationExperience.bounds());
+ assert.ok(Math.abs(bounds.foundation[0] - 26.6) < .03, 'Foundation diameter');
+ assert.ok(bounds.turbine[1] > 210 && bounds.turbine[1] < 213, 'Turbine visual fit height');
+ assert.ok(Math.abs(bounds.comparisons.man[1] - 1.88464) < .001, 'Man height');
+ assert.ok(Math.abs(bounds.comparisons.woman[1] - 1.753) < .001, 'Woman height');
+ assert.equal(state.comparisons.house, 'idle', 'House loads on demand');
+ await page.locator('[data-scene="deconstruct"]').click(); await page.waitForFunction(() => window.foundationExperience.state().explosion > .65, null, {timeout:30000});
+ state = await page.evaluate(() => window.foundationExperience.state());
+ assert.equal(state.mode, 'deconstruct'); assert.ok(state.explosion > .65);
+ await page.locator('#explode').focus(); await page.keyboard.press('End'); await page.waitForTimeout(1200);
+ assert.equal(await page.locator('#explode-value').textContent(), '100 %');
+ await page.screenshot({ path: 'artifacts/foundation-exploded.png' }); console.log('Explosion checked; checking layer and comparison controls.');
+ for (const layer of ['concrete', 'steel', 'anchors', 'ducts']) {
+  await page.locator(`[data-layer="${layer}"]`).click();
+  assert.equal((await page.evaluate(() => window.foundationExperience.state())).layers[layer], false);
+  await page.locator(`[data-layer="${layer}"]`).click();
+ }
+ await page.locator('[data-object="house"]').click();
+ await page.waitForFunction(() => window.foundationExperience.state().comparisons.house === 'ready');
+ assert.ok(Math.abs((await page.evaluate(() => window.foundationExperience.bounds())).comparisons.house[1] - 9.08017) < .002, 'House height');
+ assert.equal((await page.evaluate(() => window.foundationExperience.state())).objects.house, true);
+ await page.locator('[data-object="car"]').click();
+ assert.equal((await page.evaluate(() => window.foundationExperience.state())).objects.car, false);
+ await page.locator('[data-object="car"]').click();
+ await page.locator('#explode').focus(); await page.keyboard.press('Home'); await page.locator('#play').click(); await page.waitForTimeout(800); await page.locator('#play').click();
+ assert.ok((await page.evaluate(() => window.foundationExperience.state())).targetExplosion > 0);
+ await page.locator('[data-scene="scale"]').click(); await page.waitForTimeout(2200);
+ assert.equal(await page.locator('#explode').isDisabled(), true);
+ await page.screenshot({ path: 'artifacts/full-turbine.png' }); console.log('Full turbine checked; checking dialog and mobile.');
+ await page.locator('#about-button').click(); assert.equal(await page.locator('dialog').isVisible(), true);
+ await page.keyboard.press('Escape'); assert.equal(await page.locator('dialog').isVisible(), false);
+ await page.locator('[data-scene="foundation"]').click(); await page.locator('[data-object="house"]').click();
+ await page.locator('#reset').click(); await page.waitForTimeout(1600);
+ assert.equal((await page.evaluate(() => window.foundationExperience.state())).targetExplosion, 0);
+ await page.setViewportSize({ width: 390, height: 844 }); await page.waitForTimeout(1000);
+ await page.screenshot({ path: 'artifacts/foundation-mobile.png', fullPage: true });
+ assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false, 'No mobile overflow');
+ await page.locator('[data-scene="deconstruct"]').click(); await page.locator('#explode').evaluate(el => { el.value = '50'; el.dispatchEvent(new Event('input', {bubbles:true})); });
+ assert.equal((await page.evaluate(() => window.foundationExperience.state())).targetExplosion, .5);
+ assert.deepEqual(errors, []);
+ console.log(JSON.stringify({ result: 'PASS', meshCount: state.meshCount, bounds, checks: ['models load', 'reference dimensions', 'scene transitions', 'explode slider', 'all material toggles', 'comparison toggles', 'play/pause', 'scale mode', 'dialog keyboard dismiss', 'reset', 'mobile controls and overflow', 'no browser errors'] }, null, 2));
+} catch (error) { fs.mkdirSync('artifacts', {recursive:true}); await page.screenshot({path:'artifacts/error.png'}); console.log('Browser errors:', errors, await page.locator('#loading').textContent()); throw error; } finally { await browser.close(); }

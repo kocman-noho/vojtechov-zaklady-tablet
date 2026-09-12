@@ -1,0 +1,728 @@
+{
+  "units": "mm",
+  "full_size_scale": "1:1",
+  "uniform_copy_scale": "1:160",
+  "feature_enlargement": "none",
+  "foundation_diameter_mm": 26600,
+  "concrete_max_depth_mm": 3200,
+  "gross_concrete_volume_m3": 758.119,
+  "drawing_concrete_volume_m3": 759,
+  "anchor_rod_count": 240,
+  "anchor_rod_diameter_mm": 36,
+  "anchor_rod_radii_mm": [
+    3213,
+    3440
+  ],
+  "scheduled_lower_ring_rows": [
+    {
+      "position": 100,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 8,
+      "segments_total": 8,
+      "arc_length_mm": 11030.0,
+      "radius_mm": 13200.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 101,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 8,
+      "segments_total": 8,
+      "arc_length_mm": 10890.0,
+      "radius_mm": 13020.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 102,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 8,
+      "segments_total": 8,
+      "arc_length_mm": 10750.0,
+      "radius_mm": 12840.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 103,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 8,
+      "segments_total": 8,
+      "arc_length_mm": 10610.0,
+      "radius_mm": 12660.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 104,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 11870.0,
+      "radius_mm": 12480.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 105,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 11710.0,
+      "radius_mm": 12300.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 106,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 11550.0,
+      "radius_mm": 12120.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 107,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 11380.0,
+      "radius_mm": 11940.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 108,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 11220.0,
+      "radius_mm": 11760.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 109,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 11060.0,
+      "radius_mm": 11580.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 110,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 10900.0,
+      "radius_mm": 11400.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 111,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 10740.0,
+      "radius_mm": 11220.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 112,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 10580.0,
+      "radius_mm": 11040.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 113,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 7,
+      "segments_total": 7,
+      "arc_length_mm": 10410.0,
+      "radius_mm": 10860.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 114,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 6,
+      "segments_total": 6,
+      "arc_length_mm": 11850.0,
+      "radius_mm": 10680.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 115,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 6,
+      "segments_total": 6,
+      "arc_length_mm": 11660.0,
+      "radius_mm": 10500.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 116,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 6,
+      "segments_total": 6,
+      "arc_length_mm": 11480.0,
+      "radius_mm": 10320.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 117,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 6,
+      "segments_total": 6,
+      "arc_length_mm": 11290.0,
+      "radius_mm": 10140.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 118,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 6,
+      "segments_total": 6,
+      "arc_length_mm": 11100.0,
+      "radius_mm": 9960.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 119,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 6,
+      "segments_total": 6,
+      "arc_length_mm": 10910.0,
+      "radius_mm": 9780.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 120,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 6,
+      "segments_total": 6,
+      "arc_length_mm": 10720.0,
+      "radius_mm": 9600.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 121,
+      "diameter_mm": 20,
+      "rings": 1,
+      "segments_per_ring": 6,
+      "segments_total": 6,
+      "arc_length_mm": 10530.0,
+      "radius_mm": 9420.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 122,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 6,
+      "segments_total": 12,
+      "arc_length_mm": 10340.0,
+      "radius_mm": 9240.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 123,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 6,
+      "segments_total": 12,
+      "arc_length_mm": 10150.0,
+      "radius_mm": 9060.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 124,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 11830.0,
+      "radius_mm": 8880.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 125,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 11600.0,
+      "radius_mm": 8700.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 126,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 11380.0,
+      "radius_mm": 8520.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 127,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 11150.0,
+      "radius_mm": 8340.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 128,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 10920.0,
+      "radius_mm": 8160.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 129,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 10700.0,
+      "radius_mm": 7980.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 130,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 10470.0,
+      "radius_mm": 7800.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 131,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 10250.0,
+      "radius_mm": 7620.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 132,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 5,
+      "segments_total": 10,
+      "arc_length_mm": 10020.0,
+      "radius_mm": 7440.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 133,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 5,
+      "segments_total": 15,
+      "arc_length_mm": 9790.0,
+      "radius_mm": 7260.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 134,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 5,
+      "segments_total": 15,
+      "arc_length_mm": 9570.0,
+      "radius_mm": 7080.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 135,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 5,
+      "segments_total": 15,
+      "arc_length_mm": 9340.0,
+      "radius_mm": 6900.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 136,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 5,
+      "segments_total": 15,
+      "arc_length_mm": 9120.0,
+      "radius_mm": 6720.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 137,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 4,
+      "segments_total": 12,
+      "arc_length_mm": 10950.0,
+      "radius_mm": 6540.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 138,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 4,
+      "segments_total": 12,
+      "arc_length_mm": 10670.0,
+      "radius_mm": 6360.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 139,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 4,
+      "segments_total": 12,
+      "arc_length_mm": 10380.0,
+      "radius_mm": 6180.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 140,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 4,
+      "segments_total": 12,
+      "arc_length_mm": 10100.0,
+      "radius_mm": 6000.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 141,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 4,
+      "segments_total": 12,
+      "arc_length_mm": 9820.0,
+      "radius_mm": 5820.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 142,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 4,
+      "segments_total": 12,
+      "arc_length_mm": 9540.0,
+      "radius_mm": 5640.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 143,
+      "diameter_mm": 20,
+      "rings": 3,
+      "segments_per_ring": 4,
+      "segments_total": 12,
+      "arc_length_mm": 9250.0,
+      "radius_mm": 5460.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 144,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 4,
+      "segments_total": 8,
+      "arc_length_mm": 9080.0,
+      "radius_mm": 5350.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 145,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 4,
+      "segments_total": 8,
+      "arc_length_mm": 8840.0,
+      "radius_mm": 5200.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 146,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 4,
+      "segments_total": 8,
+      "arc_length_mm": 8610.0,
+      "radius_mm": 5050.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 147,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 4,
+      "segments_total": 8,
+      "arc_length_mm": 8370.0,
+      "radius_mm": 4900.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 148,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 4,
+      "segments_total": 8,
+      "arc_length_mm": 8140.000000000001,
+      "radius_mm": 4750.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 149,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 4,
+      "segments_total": 8,
+      "arc_length_mm": 7900.0,
+      "radius_mm": 4600.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 150,
+      "diameter_mm": 20,
+      "rings": 2,
+      "segments_per_ring": 4,
+      "segments_total": 8,
+      "arc_length_mm": 7670.0,
+      "radius_mm": 4450.0,
+      "lap_mm": 650.0
+    },
+    {
+      "position": 151,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 4,
+      "segments_total": 4,
+      "arc_length_mm": 7900.0,
+      "radius_mm": 4300.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 152,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 4,
+      "segments_total": 4,
+      "arc_length_mm": 7720.0,
+      "radius_mm": 4190.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 153,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 4,
+      "segments_total": 4,
+      "arc_length_mm": 7540.0,
+      "radius_mm": 4070.0000000000005,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 154,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 4,
+      "segments_total": 4,
+      "arc_length_mm": 7360.0,
+      "radius_mm": 3960.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 155,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 4,
+      "segments_total": 4,
+      "arc_length_mm": 7180.0,
+      "radius_mm": 3840.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 156,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 4,
+      "segments_total": 4,
+      "arc_length_mm": 7000.0,
+      "radius_mm": 3730.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 157,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 4,
+      "segments_total": 4,
+      "arc_length_mm": 6820.0,
+      "radius_mm": 3610.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 158,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 4,
+      "segments_total": 4,
+      "arc_length_mm": 6630.0,
+      "radius_mm": 3500.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 159,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 3,
+      "segments_total": 3,
+      "arc_length_mm": 7710.0,
+      "radius_mm": 3130.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 160,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 3,
+      "segments_total": 3,
+      "arc_length_mm": 7470.0,
+      "radius_mm": 3020.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 161,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 3,
+      "segments_total": 3,
+      "arc_length_mm": 7230.0,
+      "radius_mm": 2900.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 162,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 3,
+      "segments_total": 3,
+      "arc_length_mm": 6990.0,
+      "radius_mm": 2790.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 163,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 3,
+      "segments_total": 3,
+      "arc_length_mm": 6750.0,
+      "radius_mm": 2670.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 164,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 3,
+      "segments_total": 3,
+      "arc_length_mm": 6510.0,
+      "radius_mm": 2560.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 165,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 3,
+      "segments_total": 3,
+      "arc_length_mm": 6270.0,
+      "radius_mm": 2440.0,
+      "lap_mm": 1100.0
+    },
+    {
+      "position": 166,
+      "diameter_mm": 25,
+      "rings": 1,
+      "segments_per_ring": 3,
+      "segments_total": 3,
+      "arc_length_mm": 6030.0,
+      "radius_mm": 2330.0,
+      "lap_mm": 1100.0
+    }
+  ],
+  "included_lower_ring_count": 107,
+  "partial_radial_groups": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "partial_radial_bar_count": 720,
+  "upper_ring_count": 109,
+  "upper_radial_bar_count": 240,
+  "through_depth_shear_link_count": 1080,
+  "revision": "Added section-derived upper mats, shear links and pedestal reinforcement; no enlargement.",
+  "source_verified": [
+    "main concrete section dimensions",
+    "240 M36 rods and their pitch radii",
+    "top and lower anchor-ring radii and thicknesses",
+    "67 lower ring schedule rows",
+    "straight lower radial group quantities, diameters and lengths",
+    "duct OD/ID and minimum bend radius",
+    "upper/shear/pedestal bar diameters and arrangement categories visible in section"
+  ],
+  "inferred": [
+    "rebar layer elevations and exact start/phase of straight radial bars",
+    "duct route, bundle spacing and termination levels",
+    "anchor rod angular phase",
+    "upper radial centerlines, upper ring starting radii/secondary-layer mapping",
+    "shear-link orientation and bend geometry; the two inner 60-count groups represented by one 120-count family",
+    "pedestal upright centerlines, hoop elevations and angular phase"
+  ],
+  "omitted": [
+    "fabrication-level reconciliation with unprovided upper plan D02888982",
+    "remaining bent radial bars, hook tails and detailed shear-link bends",
+    "ring laps, tangents, staggering and bar ribs (rings modeled continuous)",
+    "rod protrusions beyond ring faces, nuts and threads; detailed supplier basket drawing absent",
+    "tower shell: wall thickness not established",
+    "lightning clamps and backfill"
+  ],
+  "scope": "Dimensioned visualization with actual-size details; not a complete fabrication or as-built model.",
+  "print_warning": "Reference 1:160 has 0.125 mm diameter 20 mm rebar and 0.225 mm M36 shafts; not intended for a 0.4 mm nozzle."
+}

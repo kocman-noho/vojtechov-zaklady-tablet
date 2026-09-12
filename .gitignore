@@ -1,0 +1,9 @@
+# Heavy source assets stay local; the browser derivatives live in experience/public/models/
+models/output/
+models/__pycache__/
+Wind_turbine_with_foundation_E_175_rotor_diameter_172m/
+*.pdf
+result.json
+.agents/
+.codex/
+.DS_Store

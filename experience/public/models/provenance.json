@@ -1,0 +1,219 @@
+{
+  "ducts_OD160_ID150_R1500_inferred_route": {
+    "original_faces": 58144,
+    "vertices": 29072,
+    "faces": 58144,
+    "bounds_m": [
+      [
+        0.011959460973739624,
+        -3.629936752319336,
+        -10.005549926757812
+      ],
+      [
+        10.005549926757812,
+        0.0,
+        -0.011959460973739624
+      ]
+    ]
+  },
+  "pedestal_rebar_and_hoops_inferred_placement": {
+    "original_faces": 68490,
+    "vertices": 35550,
+    "faces": 68490,
+    "bounds_m": [
+      [
+        -0.08042345046997071,
+        -3.08,
+        -4.046614074707032
+      ],
+      [
+        4.0466156005859375,
+        -0.1499999999999999,
+        0.3213759231567383
+      ]
+    ]
+  },
+  "through_depth_shear_links_inferred_bends": {
+    "original_faces": 1836460,
+    "vertices": 919548,
+    "faces": 1836460,
+    "bounds_m": [
+      [
+        -0.012749409675598145,
+        -2.6,
+        -12.805
+      ],
+      [
+        12.805,
+        -0.58750244140625,
+        0.012749409675598145
+      ]
+    ]
+  },
+  "upper_radial_bars_d25_inferred_bends": {
+    "original_faces": 72464,
+    "vertices": 36232,
+    "faces": 72464,
+    "bounds_m": [
+      [
+        0.04771359443664551,
+        -2.527214279174805,
+        -13.198233642578126
+      ],
+      [
+        13.198233642578126,
+        -0.07500305175781241,
+        -0.04771359443664551
+      ]
+    ]
+  },
+  "upper_rings_section_derived_inferred_placement": {
+    "original_faces": 361662,
+    "vertices": 189442,
+    "faces": 361662,
+    "bounds_m": [
+      [
+        -0.26260393142700195,
+        -2.4935265350341798,
+        -13.205389404296875
+      ],
+      [
+        13.20800048828125,
+        -0.050002441406249876,
+        1.0493778228759765
+      ]
+    ]
+  },
+  "partial_radial_groups_5_to_9_inferred_placement": {
+    "original_faces": 56418,
+    "vertices": 28698,
+    "faces": 56418,
+    "bounds_m": [
+      [
+        -0.01249011754989624,
+        -2.6499990081787113,
+        -13.200000000000001
+      ],
+      [
+        13.200000000000001,
+        -2.5250000000000004,
+        0.008926270008087158
+      ]
+    ]
+  },
+  "scheduled_lower_rings_inferred_layer_elevations": {
+    "original_faces": 355026,
+    "vertices": 185966,
+    "faces": 355026,
+    "bounds_m": [
+      [
+        -0.2626436996459961,
+        -3.1249975204467777,
+        -13.207388916015626
+      ],
+      [
+        13.21,
+        -2.5150019836425783,
+        1.0495367431640625
+      ]
+    ]
+  },
+  "lower_anchor_ring_actual_dimensions": {
+    "original_faces": 77432,
+    "vertices": 38236,
+    "faces": 77432,
+    "bounds_m": [
+      [
+        -3.522213134765625,
+        -2.835999984741211,
+        -3.524303283691406
+      ],
+      [
+        3.525,
+        -2.785999984741211,
+        3.524303283691406
+      ]
+    ]
+  },
+  "top_flange_actual_dimensions": {
+    "original_faces": 77432,
+    "vertices": 38236,
+    "faces": 77432,
+    "bounds_m": [
+      [
+        -3.6121420288085937,
+        -0.040000000000000036,
+        -3.6142852783203128
+      ],
+      [
+        3.615,
+        0.06000000000000005,
+        3.6142852783203128
+      ]
+    ]
+  },
+  "anchor_rods_240_M36": {
+    "original_faces": 74880,
+    "vertices": 37920,
+    "faces": 74880,
+    "bounds_m": [
+      [
+        -3.45798583984375,
+        -2.835999984741211,
+        -3.457996520996094
+      ],
+      [
+        3.4579998779296877,
+        0.06000000000000005,
+        3.457996520996094
+      ]
+    ]
+  },
+  "concrete": {
+    "original_faces": 116394,
+    "vertices": 57833,
+    "faces": 116394,
+    "bounds_m": [
+      [
+        -13.295286865234376,
+        -3.2,
+        -13.3
+      ],
+      [
+        13.3,
+        0.0,
+        13.295286865234376
+      ]
+    ]
+  },
+  "turbine": {
+    "source_file": "Wind_turbine_with_foundation_E_175_rotor_diameter_172m/Wind_turbine_with_foundation_E_175_rotor_diameter_172m.obj",
+    "source_uv_v_sign_corrected": true,
+    "source_label_rotor_m": 172,
+    "display_rotor_m": 175,
+    "display_hub_m": 132,
+    "source_uniformly_scaled_hub_m": 177.59971801224532,
+    "tower_shortening_m": 45.59971801224532,
+    "tower_base_shell_diameter_m": 6.7,
+    "cut_plane_source_z": -0.00144,
+    "bounds_m": [
+      [
+        -50.876312978257985,
+        0.0,
+        -10.709696983393144
+      ],
+      [
+        87.08975066779571,
+        211.65341383999385,
+        12.653599490345295
+      ]
+    ],
+    "faces": 26444,
+    "tip_cleanup": {
+      "removed_components": 15,
+      "removed_faces": 2184,
+      "description": "Removed detached source tip fittings; original tapered blade shells and UVs retained. Rotor calibration now uses the blade-shell radius."
+    }
+  },
+  "reference_scope": "Actual-size reinforcement in exposed quadrant; remaining steel stays occluded by concrete. Reconstructed geometry has inferred placements and documented omissions. Explosion is explanatory, not construction sequencing."
+}

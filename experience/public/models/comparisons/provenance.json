@@ -1,0 +1,160 @@
+{
+  "assets": {
+    "car": {
+      "file": "car.glb",
+      "bytes": 922360,
+      "original_triangles": 547954,
+      "triangles": 233908,
+      "dimensions_m": [
+        4.697,
+        1.6775,
+        2.10974
+      ],
+      "scale_note": "Uniformly calibrated to 4.697 m length; mirrors retained. Source materials missing, finishes reconstructed with supplied badge atlas. Dimensions: https://www.skoda-storyboard.com/en/press-kits/skoda-kodiaq-paris-press-kit-2016/"
+    },
+    "man": {
+      "file": "man.glb",
+      "bytes": 1045968,
+      "original_triangles": 30450,
+      "triangles": 30450,
+      "dimensions_m": [
+        0.57043,
+        1.88464,
+        0.71196
+      ],
+      "scale_note": "Source interpreted as millimetres; scan pose and proportions preserved."
+    },
+    "woman": {
+      "file": "woman.glb",
+      "bytes": 1178880,
+      "original_triangles": 30014,
+      "triangles": 30014,
+      "dimensions_m": [
+        0.59733,
+        1.753,
+        0.81953
+      ],
+      "scale_note": "Source interpreted as millimetres; scan pose and proportions preserved."
+    },
+    "house": {
+      "file": "house.glb",
+      "bytes": 1108616,
+      "triangles": 177013,
+      "dimensions_m": [
+        13.7,
+        9.08017,
+        13.65636
+      ],
+      "scale_note": "Source units interpreted as inches from architectural proportions (0.0254 m per unit). Uniform scaling; below-ground geometry clipped at source z=0. Overall bounds include attached steps, roof and chimney, excluding site terrain/paving.",
+      "material_note": "Named 3DS material assignments retained. No source image texture references. Added project-supplied timber and stone textures; clay roof, plaster, curtains and glazing use PBR finishes. Curtain density reduced; original roof tile geometry preserved to avoid distorted edges.",
+      "source_file": "model_dom_2.3DS",
+      "source_sha256": "7ce84766de12b86c50179b5064fd47dd2dbd20da405a9564ffae220841ae365d",
+      "original_image_textures": false,
+      "original_materials": [
+        {
+          "name": "paving",
+          "color": "bbbbbb",
+          "opacity": 1
+        },
+        {
+          "name": "ground",
+          "color": "bbbbbb",
+          "opacity": 1
+        },
+        {
+          "name": "ground_2",
+          "color": "bbbbbb",
+          "opacity": 1
+        },
+        {
+          "name": "curtains",
+          "color": "fbfbfb",
+          "opacity": 0.84
+        },
+        {
+          "name": "roof",
+          "color": "793500",
+          "opacity": 1
+        },
+        {
+          "name": "roof_2",
+          "color": "ffffff",
+          "opacity": 1
+        },
+        {
+          "name": "wall_light",
+          "color": "e5e1dd",
+          "opacity": 1
+        },
+        {
+          "name": "wood",
+          "color": "cfc7bc",
+          "opacity": 1
+        },
+        {
+          "name": "glass",
+          "color": "000000",
+          "opacity": 0
+        },
+        {
+          "name": "stone",
+          "color": "c79851",
+          "opacity": 1
+        },
+        {
+          "name": "wall_dark",
+          "color": "baac99",
+          "opacity": 1
+        },
+        {
+          "name": "dark sreel",
+          "color": "6a6a6a",
+          "opacity": 1
+        }
+      ],
+      "excluded_site_meshes": [
+        {
+          "name": "20     001",
+          "material": "paving",
+          "triangles": 4454
+        },
+        {
+          "name": "31     011",
+          "material": "ground",
+          "triangles": 11498
+        },
+        {
+          "name": "32     011",
+          "material": "ground",
+          "triangles": 5112
+        },
+        {
+          "name": "Object059",
+          "material": "ground_2",
+          "triangles": 702
+        }
+      ],
+      "original_triangles": 335626,
+      "retained_before_optimization": 313860,
+      "supplemental_textures": {
+        "archive": "Modern+House_05_scanline_max.zip",
+        "sha256": "66213fae61e5e764eeeee1ab807fe879f1cb21593e71732f6f5bbd135e1c990d",
+        "wood": "Modern House_01_TEXTURE (6).jpg",
+        "stone": "Modern House_01_TEXTURE (2).jpg"
+      }
+    }
+  },
+  "processing": "Car paint, glazing and lamps retain source topology; other car details simplified. People retain scan geometry and 2K colour/1K normal maps. The replacement 3DS house has named material regions but no source image maps; PBR finishes and supplied supplemental wood/stone textures added. Site meshes excluded and curtains simplified; original roof tile geometry preserved. All models use Draco geometry.",
+  "source_sha256": {
+    "Car+Skoda+Kodiaq+2016.obj": "a83bd80c17824edce89c6071a0e11c2e9622f31e1f9ceb694ab12b025e71b760",
+    "textures.rar": "d67c0c07691154a307d8be68853701563d1bb93f6f35a1e05fad4183f2da0417",
+    "Ivan_1304.obj": "77d2d3f1ad18c6805b8ca1c950591fd066e5cca601d8d94d5a930c087c4b234a",
+    "Ivan_1304_Textures.rar": "5dfdc96e191026b561e660a19dde38323b50246e06b5b0524ad53eb29b4a0cdd",
+    "Marina_1276.obj": "14f172dd297473ebdcf52af0ee01fcb7f422dbba80c6492796545a0de420fefa",
+    "Marina_1276_Textures.rar": "8c777e37d0a5221accee804bd738dc856e80e4652641ea36354feb54fc128242",
+    "Modern+House_05_blend.zip": "5fa594c5963a71d7496f89cc7cc050506d4f6370f65496436ddcd1c2709f3c23",
+    "Modern+House_05_scanline_max.zip": "66213fae61e5e764eeeee1ab807fe879f1cb21593e71732f6f5bbd135e1c990d",
+    "model_dom_2.3DS": "7ce84766de12b86c50179b5064fd47dd2dbd20da405a9564ffae220841ae365d"
+  },
+  "source_rights": "User-supplied assets; original license documents were not included in these exports."
+}

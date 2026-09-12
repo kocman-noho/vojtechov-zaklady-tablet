@@ -1,0 +1,8 @@
+{
+  "concrete-aggregate.jpg": {
+    "source_archive": "Modern+House_05_scanline_max.zip",
+    "source_file": "Modern House_01_TEXTURE (4).jpg",
+    "processing": "2048 to 1024 px, JPEG quality 90; original image colours retained. Used as subtle colour, roughness and bump variation with 3 m triplanar tiles and mirrored wrapping.",
+    "source_rights": "User-supplied house texture; original reuse terms apply."
+  }
+}
